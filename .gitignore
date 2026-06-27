@@ -16,6 +16,15 @@ parts/
 sdist/
 var/
 wheels/
+.venv/
+.venv311/
+__pycache__/
+*.pyc
+
+*.zip
+
+node_modules/
+.env
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
