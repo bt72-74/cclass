@@ -1,131 +1,278 @@
-# 🚀 C Class - Sales Analytics Dashboard
+# C-Class BI Platform
 
-داشبورد تحلیل میزان فروش شرکت سی کلاس
+سامانه هوش تجاری (Business Intelligence) مبتنی بر هوش مصنوعی برای تحلیل فروش، پیش‌بینی روند فروش و پشتیبانی از تصمیم‌گیری مدیران.
 
-## 📋 ساختار پروژه
+---
 
-```
-cclass_bi/
-├── backend/                    FastAPI Backend
-│   ├── app/
-│   ├── requirements.txt
-│   └── ...
-│
-├── frontend/                   Next.js Frontend
-│   ├── src/
-│   ├── app/
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── ...
-│
-├── run-backend.bat            Windows Backend
-├── run-frontend.bat           Windows Frontend
-├── run-backend.ps1            PowerShell Backend
-├── run-frontend.ps1           PowerShell Frontend
-├── run-backend.sh             Linux/Mac Backend
-├── run-frontend.sh            Linux/Mac Frontend
-├── setup.bat                  Setup Script
-├── cleanup.bat                Cleanup Script
-├── .gitignore
-└── README.md
-```
+# معرفی پروژه
 
-## 🎯 شروع سریع
+C-Class BI یک سامانه جامع هوش تجاری است که با هدف تحلیل داده‌های فروش، پایش شاخص‌های کلیدی عملکرد (KPI)، پیش‌بینی فروش و ارائه بینش‌های هوشمند به مدیران توسعه یافته است.
 
-### ✅ اولین بار - Setup
+این پروژه با ترکیب تحلیل داده، مدل‌های یادگیری ماشین و مدل‌های زبانی بزرگ (LLM)، بستری برای تصمیم‌گیری هوشمند در سازمان‌ها فراهم می‌کند.
 
-```cmd
-setup.bat
-```
+---
 
-### ✅ Windows - Batch (ساده‌ترین)
+# قابلیت‌ها
 
-**2 Command Prompt جداگانه:**
+## داشبورد مدیریتی
 
-```cmd
-REM Terminal 1
-run-backend.bat
+* نمایش شاخص‌های کلیدی عملکرد (KPI)
+* گزارش‌های تحلیلی فروش
+* نمودارهای تعاملی
+* تحلیل عملکرد محصولات
+* تحلیل مشتریان
 
-REM Terminal 2
-run-frontend.bat
-```
+## دستیار هوشمند (AI Copilot)
 
-### ✅ Windows - PowerShell
+* پاسخ به پرسش‌های کاربران به زبان طبیعی
+* تحلیل هوشمند داده‌های فروش
+* تولید گزارش‌های مدیریتی
+* ارائه پیشنهادهای مبتنی بر داده
+* تحلیل زمینه‌ای اطلاعات
 
-```powershell
-# Terminal 1
-.\run-backend.ps1
+## پیش‌بینی فروش
 
-# Terminal 2
-.\run-frontend.ps1
-```
+* پیش‌بینی فروش با Prophet
+* پیش‌بینی فروش با LSTM
+* پیش‌بینی فروش با XGBoost
+* تحلیل روند فروش
+* پیش‌بینی عملکرد آینده
 
-### ✅ Linux / Mac
+## تحلیل عملکرد فروشندگان
 
-```bash
-# Terminal 1
-./run-backend.sh
+* رتبه‌بندی فروشندگان
+* ارزیابی عملکرد
+* محاسبه شاخص‌های عملکرد
+* مقایسه عملکرد افراد
+* گزارش‌های مدیریتی
 
-# Terminal 2
-./run-frontend.sh
-```
+## تحلیل محصولات
 
-### ✅ دستی
+* شناسایی محصولات پرفروش
+* تحلیل سودآوری محصولات
+* تحلیل برندها
+* تحلیل دسته‌بندی کالاها
+* شناسایی محصولات کم‌گردش
 
-**Terminal 1:**
-```bash
-cd backend
-pip install -r requirements.txt
-python -m uvicorn app.main:app --reload
-```
+## تحلیل مشتریان
 
-**Terminal 2:**
-```bash
-cd frontend
-npm install
-npm run dev
-```
+* بخش‌بندی مشتریان
+* تحلیل RFM
+* تحلیل رفتار خرید
+* پیش‌بینی خرید مجدد
+* ارزش طول عمر مشتری (CLV)
 
-## 📍 آدرس‌ها
+## موتور پیشنهاد فروش
 
-| سرویس | URL |
-|-------|-----|
-| 🎨 Frontend | http://localhost:3000 |
-| 🔌 Backend API | http://localhost:8000 |
-| 📚 API Swagger | http://localhost:8000/docs |
-| 📖 ReDoc | http://localhost:8000/redoc |
+* پیشنهاد فروش مکمل (Cross Selling)
+* پیشنهاد فروش ارتقایی (Up Selling)
+* تحلیل فرصت‌های فروش
+* سیستم پیشنهاددهنده
+* تحلیل شباهت محصولات و مشتریان
 
-## 🔐 ورود
+## سیستم هشدار
+
+* تشخیص افت فروش
+* شناسایی ناهنجاری‌ها
+* هشدارهای مدیریتی
+* پیشنهاد اقدامات اصلاحی
+
+---
+
+# معماری سیستم
 
 ```
-نام کاربری: admin
-رمز عبور: (تنظیم شده در backend)
-```
-
-## 📚 مستندات
-
-- **Backend**: `backend/README.md`
-- **Frontend**: `frontend/README.md` (اگر موجود)
-
-## ⚙️ پیش‌نیازها
-
-- Python 3.10+
-- Node.js 18+
-- npm یا yarn
-
-## 💡 نکات
-
-- Backend را **اول** شروع کنید
-- از **دو Terminal جداگانه** استفاده کنید
-- صبر کنید تا **dependencies نصب** شود
-
-## 🧹 تمیز‌سازی
-
-```cmd
-cleanup.bat
+               Next.js Dashboard
+                       │
+                REST API + JWT
+                       │
+        ┌───────────────────────────────┐
+        │        FastAPI Backend         │
+        ├───────────────────────────────┤
+        │ احراز هویت                     │
+        │ داشبورد مدیریتی                │
+        │ دستیار هوشمند                 │
+        │ تحلیل فروش                    │
+        │ پیش‌بینی فروش                 │
+        │ تحلیل مشتریان                 │
+        │ تحلیل محصولات                 │
+        │ موتور پیشنهاد فروش            │
+        └───────────────────────────────┘
+                       │
+                 PostgreSQL Database
 ```
 
 ---
 
-**Happy Coding! 🎉**
+# فناوری‌های استفاده‌شده
 
+## Backend
+
+* FastAPI
+* SQLAlchemy
+* Pydantic
+* JWT Authentication
+* Celery
+* REST API
+
+## هوش مصنوعی و یادگیری ماشین
+
+* OpenAI API / LLM
+* Prophet
+* XGBoost
+* LSTM
+* Recommendation Engine
+
+## Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+## پایگاه داده
+
+* PostgreSQL
+
+---
+
+# ساختار پروژه
+
+```text
+cclass_bi/
+│
+├── backend/
+│   ├── app/
+│   │   ├── ai_copilot/
+│   │   ├── analytics/
+│   │   ├── forecasting/
+│   │   ├── dashboard/
+│   │   ├── optimization/
+│   │   ├── sales_opportunity/
+│   │   ├── repositories/
+│   │   ├── services/
+│   │   └── api/
+│   └── requirements.txt
+│
+├── cclass-dashboard/
+│   ├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── store/
+│   └── package.json
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# راه‌اندازی پروژه
+
+## دریافت پروژه
+
+```bash
+git clone https://github.com/bt72-74/cclass.git
+
+cd cclass
+```
+
+---
+
+## اجرای Backend
+
+```bash
+cd backend
+
+python -m venv .venv
+
+# Linux / macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+```
+
+آدرس سرویس:
+
+```
+http://localhost:8000
+```
+
+مستندات API:
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+## اجرای Frontend
+
+```bash
+cd cclass-dashboard
+
+npm install
+
+npm run dev
+```
+
+آدرس برنامه:
+
+```
+http://localhost:3000
+```
+
+---
+
+# مستندات API
+
+| سرویس       | آدرس                        |
+| ----------- | --------------------------- |
+| Backend API | http://localhost:8000       |
+| Swagger UI  | http://localhost:8000/docs  |
+| ReDoc       | http://localhost:8000/redoc |
+| Frontend    | http://localhost:3000       |
+
+---
+
+# احراز هویت
+
+این پروژه برای دسترسی به APIها از JWT Authentication استفاده می‌کند.
+
+---
+
+# برنامه‌های توسعه
+
+* استقرار با Docker
+* پشتیبانی از Kubernetes
+* استفاده از Redis
+* راه‌اندازی CI/CD
+* مدیریت سطوح دسترسی کاربران
+* معماری چندسازمانی (Multi-Tenant)
+* توسعه قابلیت‌های هوش مصنوعی
+* اعلان‌های بلادرنگ
+
+---
+
+# مشارکت در توسعه
+
+در صورت تمایل می‌توانید پروژه را Fork کرده و پس از ایجاد تغییرات، Pull Request ارسال کنید.
+
+---
+
+# مجوز
+
+این پروژه تحت مجوز MIT منتشر شده است.
+
+---
+
+# توسعه‌دهنده
+
+BT72-74
+
+https://github.com/bt72-74
