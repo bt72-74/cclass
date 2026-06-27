@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IRANYekan:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  direction: rtl;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IRANYekan', system-ui, -apple-system, sans-serif;
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0074C2] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#004A7A] transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-white border border-[#0074C2] text-[#0074C2] px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg p-6 shadow-md border border-gray-100;
+  }
+
+  .text-primary {
+    @apply text-[#111111];
+  }
+
+  .text-secondary {
+    @apply text-[#777777];
+  }
+}
