@@ -117,7 +117,7 @@ C-Class BI یک سامانه جامع هوش تجاری است که با هدف 
 - Passlib (bcrypt)
 - HTTPX
 
-## ai & machine learning
+## Ai & Machine learning
 - Pandas
 - NumPy
 - Scikit-learn
