@@ -109,29 +109,22 @@ C-Class BI یک سامانه جامع هوش تجاری است که با هدف 
 ## Backend
 - Python 3.11
 - FastAPI
+- Uvicorn
 - SQLAlchemy
 - Pydantic
 - Pydantic Settings
-- Alembic
-- PostgreSQL
 - JWT Authentication
 - Passlib (bcrypt)
-- Celery
-- Redis
+- HTTPX
+
+## هوش مصنوعی و یادگیری ماشی
 - Pandas
 - NumPy
 - Scikit-learn
 - Prophet
 - XGBoost
-- PyTorch
-- HTTPX
-- Uvicorn
-
-## هوش مصنوعی و یادگیری ماشی
-* Prophet
-* XGBoost
-* LSTM
-* Recommendation Engine
+- TensorFlow
+- NetworkX
 
 ## Frontend
 
@@ -141,11 +134,13 @@ C-Class BI یک سامانه جامع هوش تجاری است که با هدف 
 - TypeScript
 - Tailwind CSS
 - Axios
-- React Hook Form
-- React Query (TanStack Query)
+- TanStack Query
+- Redux Toolkit
+- React Redux
+- Zustand
 - Recharts
 - Lucide React
-- React Hot Toast
+- Classnames
 
 
 ## پایگاه داده
